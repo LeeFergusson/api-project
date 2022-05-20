@@ -1,0 +1,35 @@
+{
+  "name": "api-project",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "author": "Lee Fergusson",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "lint": "eslint ./src/**/*.js",
+    "test": "mocha --reporter='nyan' ./test/**/*.spec.js",
+    "coverage": "nyc yarn run test"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.0",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/register": "^7.17.7",
+    "chai": "^4.3.6",
+    "core-js": "^3.22.5",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "nyc": "^15.1.0",
+    "regenerator-runtime": "^0.13.9",
+    "sinon": "^14.0.0",
+    "supertest": "^6.2.3"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
